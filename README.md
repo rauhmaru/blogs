@@ -27,7 +27,7 @@ Nesse procedimento usaremos dois pendrives:
 ### Configuração
 1. Prepare o disco de instalação em um pendrive[^0][^1][^2][^3]
 2. Após a instalação via USB (ou qualquer outra), identifique quem é quem: Qual é o que está o SO e qual é que é o da instalação. Uma forma simples de se fazer isso é acessando *Storage > Disks*. Todos os discos conectados serão exibidos. O disco que pertence ao boot-pool é onde está o SO.
-3. Aesse *System > Boot*.
+3. Acesse *System > Boot*.
 4. Na tela *Boot Environments*, clique em *Actions > Boot Pool Status*. Nessa tela, irá aparecer o ponto de montagem do disco (talvez um `/dev/da0p2`).
 5. No final da linha, clique nos 3 pontos e selecione *Attach*.
 6. Na tela de *Attach*, selecione o novo disco, marque o campo *Use all disk space* e clique *Submit*.
