@@ -7,4 +7,6 @@ Então, teremos:
 2. Instalação e Configuração do Proxmox
 3. Configurando as interfaces de rede com LACP
 4. Criando os compartilhamentos com NFS
-5. 
+5. Criando um cluster no Proxmox
+6. Adicionando os storages
+7. Migrando VM's do VMware para o Proxmox
