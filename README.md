@@ -16,7 +16,7 @@ Dói né?
 ### Solução: Instalação em um USB Flash (pendrive)
 A instalação em um USB flash é uma solução de baixo custo, para poder utilizar toda a capacidade dos discos HDD ou SSD instalados na máquina. Por segurança, iremos manter os dados replicados em um segundo pendrive, criando um mirror (algo como um RAID 1).
 
-Um modelo que é interessante para realizar esse arranjo (ou solução de contorno?) é o USB Flash Drive Cruzer Fit ou SanDisk Ultra Fit USB 3.1, por conta de seu tamanho.
+Um modelo que é interessante para realizar esse arranjo é o USB Flash Drive Cruzer Fit ou SanDisk Ultra Fit USB 3.1, por conta de seu tamanho.
 
 <img src="https://www.westerndigital.com/content/dam/store/en-us/assets/products/usb-flash-drives/ultra-fit-usb-3-1/gallery/ultra-fit-usb-3-1-angle-right-up.png.wdthumb.1280.1280.webp" alt="USB Flash Drive Cruzer Fit" width="400"/>
 
