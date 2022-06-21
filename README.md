@@ -1,15 +1,24 @@
 # Dicas
 ![truenas logo](https://www.ixsystems.com/wp-content/uploads/2021/02/truenas_open_storage-logo-full-color-rgb-1280x280.png)
 
-## TrueNAS instalado no pendrive com redundância
-Essa não é a melhor forma de se manter um ambiente de produção, porém, para um ambiente de testes funciona muito bem.
+<details><summary>TrueNAS instalado no pendrive com redundância</summary>
+<p>
+  
+Essa não é a melhor forma de se manter um ambiente de produção, porém, para um ambiente de testes funciona muito bem. O ideal é que se utilize dois discos pequenos, talvez SSD, mas... Nem sempre é possível.
 
 ### Problema
 O TrueNAS em sua instalação não aceita particionamento. Ele utiliza todo o volume. Ou seja, se você possui apenas um volume de 1 TB, ele vai usar para a sua instalação, não deixando nada para ser utilizado como storage.
 
+**Acha que não é um problema?** Bom, imagine que você possui uma máquina com 6 discos, todos SAS de 600 GB, 15k rpm. Daí, você quer usar o TrueNAS. Bom, como ele precisa de um volume inteiro, você vai ter de separar dois discos de 600 GB para criar um RAID 1, e instalar o TrueNAS nele. Bem... Você deu 600 GB para uma instalação que... Não usou nem 10 GB. Desperdício.
+
+Dói né?
+
 ### Solução: Instalação em um USB Flash (pendrive)
-Iremos realizar a instalação em um pendrive, porém, por segurança, iremos manter os dados replicados em um segundo pendrive.
+A instalação em um USB flash é uma solução de baixo custo, para poder utilizar toda a capacidade dos discos HDD ou SSD instalados na máquina. Por segurança, iremos manter os dados replicados em um segundo pendrive, criando um mirror (algo como um RAID 1).
+
 Um modelo que é interessante para realizar esse arranjo (ou armengue?) é o USB Flash Drive Cruzer Fit ou SanDisk Ultra Fit USB 3.1, por conta de seu tamanho.
+
+<img src="https://www.westerndigital.com/content/dam/store/en-us/assets/products/usb-flash-drives/ultra-fit-usb-3-1/gallery/ultra-fit-usb-3-1-angle-right-up.png.wdthumb.1280.1280.webp" alt="USB Flash Drive Cruzer Fit" width="400"/>
 
 Nesse procedimento usaremos dois pendrives:
 - Um que servirá de instalação primária do TrueNAS;
@@ -25,7 +34,8 @@ Nesse procedimento usaremos dois pendrives:
 7. O TrueNAS apresentará a mensagem (se nada der errado) *Device Attached*.
 
 Após esses passos, se você voltar a tela *System > Boot > Status*, verá que foi criada a sessão mirror, e abaixo dela estará os dois discos como ONLINE. Com isso, a sua redundância estará completa e terá um pouco mais de segurança.
-
+</p>
+</details>
 
 [^0]: https://www.truenas.com/blog/how-to-install-truenas-core/
 [^1]: https://www.truenas.com/docs/core/gettingstarted/install/
