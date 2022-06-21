@@ -34,6 +34,10 @@ Nesse procedimento usaremos dois pendrives:
 7. O TrueNAS apresentará a mensagem (se nada der errado) *Device Attached*.
 
 Após esses passos, se você voltar a tela *System > Boot > Status*, verá que foi criada a sessão mirror, e abaixo dela estará os dois discos como ONLINE. Com isso, a sua redundância estará completa e terá um pouco mais de segurança.
+  
+  
+  Ainda com dúvidas?
+  O procedimento inteiro pode ser visto aqui: https://www.youtube.com/watch?v=xTUsJNvLHS8
 </p>
 </details>
 
